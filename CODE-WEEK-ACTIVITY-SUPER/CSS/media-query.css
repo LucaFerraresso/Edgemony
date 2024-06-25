@@ -1,0 +1,68 @@
+/* mobile-first: iphone SE, CARD width 100% */
+
+@media (max-width: 667px) {
+  .header {
+    display: block;
+  }
+
+  .categorylist button {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+  }
+  .reset-Btn {
+    min-width: 130px;
+  }
+
+  .card {
+    width: 100%;
+  }
+
+  .modal-content {
+    min-width: 85%;
+  }
+
+  .modal-content-text {
+    margin: 0;
+    min-width: 85%;
+  }
+
+  .search-bar {
+    display: block;
+  }
+}
+
+/* 3 cards per riga su uno schermo tablet */
+
+@media (min-width: 1024px) {
+  .header {
+    flex-direction: row;
+  }
+
+  .card {
+    width: 27%;
+  }
+
+  .header {
+    flex-wrap: wrap-reverse;
+  }
+  .search-bar {
+    justify-content: space-between;
+  }
+
+  .search-bar button {
+    min-width: 135px;
+  }
+
+  .modal {
+    flex-direction: row;
+  }
+}
+
+/* 4 cards per riga se lo schermo e' ampio */
+
+@media (min-width: 1200px) {
+  .card {
+    width: 20%;
+  }
+}

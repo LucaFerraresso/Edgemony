@@ -1,0 +1,91 @@
+body{
+    margin: 0 auto;
+}
+.timer{
+    margin:10px auto;
+    padding:10px;
+    color: white;
+    background-color: cornflowerblue;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: space-around;
+    align-items: center;
+    height: 100px;
+    width: 320px;
+    border-radius: 15px;
+    gap:10px;
+}
+.secondClock{
+    margin: auto;
+    height: 50px;
+    width: 320px;
+    padding:10px;
+    color: white;
+    background-color: white;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap:10px;
+}
+/*tre contatori paragrafo*/
+.secondsEl{
+    padding: 5px;
+    height: 50px;
+    width: 50px;
+    align-content: center;
+    text-align: center;
+    border: 1px solid black;
+    background-color: fuchsia;
+}
+.minutesEl{
+    padding: 5px;
+    height: 50px;
+    width: 50px;
+    align-content: center;
+    text-align: center;
+    border: 1px solid black;
+    background-color: fuchsia;
+}
+.hoursEl{
+    padding: 5px;
+    height: 50px;
+    width: 50px;
+    align-content: center;
+    text-align: center;
+    border: 1px solid black;
+    background-color: fuchsia;
+}
+
+/*bottoni*/
+.startBtn {
+    border-radius: 50%;
+    height: 50px;
+    width: auto;
+    box-shadow: 2px 2px 4px;
+    cursor: pointer;
+}
+.stopBtn {
+    border-radius: 50%;
+    height: 50px;
+    width: auto;
+    box-shadow: 2px 2px 4px;
+    cursor:pointer;
+}
+.lastStartBtn{
+    border-radius: 50%;
+    height: 50px;
+    width: auto;
+    box-shadow: 2px 2px 4px;
+    cursor:pointer;
+}
+.lastStopBtn{
+    border-radius: 50%;
+    height: 50px;
+    width: auto;
+    box-shadow: 2px 2px 4px;
+    cursor:pointer;
+}
+

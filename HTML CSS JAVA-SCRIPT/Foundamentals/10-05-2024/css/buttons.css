@@ -1,0 +1,24 @@
+.button {
+    display: inline-block;
+    padding: 12px 24px;
+    text-decoration: none;
+    border-radius: 24px;
+    font-weight: bold;
+}
+
+.button-flat {
+    background-color: var(--color-lightBlue);
+    border: 1px solid var(--color-lightBlue);
+    color: var(--color-darkBlue);
+    transition: all 0.35s linear;
+}
+
+.button-flat:hover {
+    background-color: transparent;
+    color: var(--color-lightBlue);
+}
+
+.button-outline {
+    border: 1px solid var(--color-lightBlue);
+    color: var(--color-lightBlue);
+}

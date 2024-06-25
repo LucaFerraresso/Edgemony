@@ -1,0 +1,106 @@
+*{
+    font-weight: 700;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*PRIMO DIV, DIV CON DUE PULSANTI*/
+
+.div-ascoltatore{
+    margin:0 auto;
+    width: 100%;
+    height: 150px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap:50px;
+    background-color: aqua;
+    border: 1px solid black;
+    border-radius: 15px;
+
+}
+
+/*BOTTONI DEL DIV*/
+
+.button-one{
+    height: 50px;
+    width: 100px;
+    border: 1px solid black;
+    border-radius: 10px;
+    cursor: pointer;
+
+}
+.button-two{
+    height: 50px;
+    width: 100px;
+    border: 1px solid black;
+    border-radius: 10px;
+    cursor: pointer;
+
+}
+
+/*OPEN MODALE BTN*/
+
+.openModalBtn{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    height:100px;
+    width: 150px;
+    border: 1px solid black;
+    border-radius: 10px;
+    cursor: pointer;
+
+}
+
+/*MODALE*/
+
+.modal{
+    position: relative;
+    width: 100%;
+    height: 150px;
+    display: none;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-end;
+    gap:50px;
+    background-color: aqua;
+    border: 1px solid black;
+    border-radius: 15px;
+}
+#modale{
+    display: flex;
+}
+
+/*BOTTONI DELLA MODALE*/
+
+.buttonOne{
+    margin-left: 10px;
+    margin-bottom: 5px;
+    height: 50px;
+    width: 100px;
+    border: 1px solid black;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.buttonTwo{
+    margin-bottom: 5px;
+    height: 50px;
+    width: 100px;
+    border: 1px solid black;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.buttonThree{
+    position: absolute;
+    top:5px;
+    right: 5px;
+    height: 50px;
+    width: 100px;
+    border: 1px solid black;
+    border-radius: 10px;
+    cursor: pointer;
+}

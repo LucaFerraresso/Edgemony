@@ -1,0 +1,92 @@
+/*sezione check product*/
+
+.checkProduct{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    padding: 10px 0 10px 0;
+    border: 1px solid black;
+    margin: auto; 
+    padding: 20px; 
+    background-color: #f2f2f2; 
+    justify-content: center;
+    align-items: center;
+    border: none;
+}
+
+.checkProduct input{
+    width: 100%; 
+    padding: 12px 20px;
+    margin: 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-sizing: border-box;
+    font-size: 16px; 
+    transition: all 0.3s ease; 
+}
+
+.checkProduct input:focus{
+    border-color: #04cff3;
+    box-shadow: 0 0 8px rgba(76, 175, 80, 0.5); 
+    outline: none; 
+}
+.checkProduct label{
+    margin-bottom: 8px; 
+    display: block; 
+    font-size: 16px; 
+}
+
+/*form .main div*/
+
+.create-an-Obj{
+    padding: 10px 0 10px 0;
+    border: 1px solid black;
+    margin: auto; 
+    padding: 20px; 
+    background-color: #f2f2f2; 
+    border-radius: 15px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    
+}
+
+/*form input*/
+
+.create-an-Obj input{
+    width: 100%; 
+    padding: 12px 20px;
+    margin: 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-sizing: border-box;
+    font-size: 16px; 
+    transition: all 0.3s ease; 
+}
+
+label {
+    margin-bottom: 8px; 
+    display: block; 
+    font-size: 16px; 
+}
+
+.create-an-Obj input:focus {
+    border-color: #04cff3;
+    box-shadow: 0 0 8px rgba(76, 175, 80, 0.5); 
+    outline: none; 
+}
+
+/*div con i tre bottoni*/
+.buttonsDiv{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+
+}

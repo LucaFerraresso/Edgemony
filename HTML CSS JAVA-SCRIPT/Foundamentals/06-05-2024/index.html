@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Esercitazione-06maggio</title>
+</head>
+
+<body>
+    <!creo un container per la mia navbar e inserisco un titolo e un paragrafo>
+    <nav>
+        <h1><mark>Esercitazione HTML</mark></h1>
+        <p>Oggi, 6 maggio 2024 e' ufficialmente iniziato il corso Full Stack di Edgemony. Nella prima lezione abbiamo avuto modo di ripassare quelli che sono gli elementi e i tag piu' utilizzati all'interno di una pagina html. In seguito provero' ad inserire una lista non ordinata elencando alcuni dei miei film preferiti. Essendo una lista non ordinata, gli elementi si dispongono su un elenco puntato. Una lista ordinata invece dispone i propri elementi su un elenco numerato.</p>
+    </nav>
+
+    <!creo secondo container con una lista non ordinata al suo interno>
+    <section>
+        <ul>
+            <li>Pulp Fiction</li>
+            <li>Fight Club</li>
+            <li>Inception</li>
+            <li>Blow</li>
+            <li>...</li>
+        </ul>
+    </section>
+
+    <!creo un terzo container con al suo interno una lista di 4 articoli. Ognuno di essi ha un titolo, un immagine, un breve testo e un link esterno>
+    <article>
+        <h2>Sezione articoli: qui troverai tutte le informazoni riguardanti i 4 film citati in precedenza.</h2>
+        <ol>
+            <li>
+                <h3>Pulp Fiction</h3>
+                <img src="pulpfiction.jpg" alt="copertina film">
+                <p>Pulp Fiction è un film del 1994 scritto e diretto da Quentin Tarantino e interpretato, tra gli altri, da John Travolta, Samuel L. Jackson, Uma Thurman e Bruce Willis. Tarantino scrisse Pulp Fiction durante il biennio 1992-93, inglobando scene che il suo amico e collaboratore Roger Avary aveva originariamente scritto per Una vita al massimo. Il film è noto per...</p>
+                <a href="https://it.wikipedia.org/wiki/Pulp_Fiction"
+                   title="Pulp Fiction"
+                   target="_blank"
+                   rel="noopener noreferrer">PER SAPERNE DI PIU'</a>
+            </li>
+            <li>
+                <h3>Fight Club</h3>
+                <img src="fightclub.jpg" alt="copertina fight club">
+                <p>Fight Club è un film del 1999 diretto da David Fincher, basato sull'omonimo romanzo di Chuck Palahniuk. Sceneggiato da Jim Uhls, prodotto da Art Linson e Arnon Milchan. Il film, che offre una visione altamente critica del consumismo e dell'alienazione dell'uomo moderno, è stato inserito nel 2008 al decimo posto nella classifica Lista dei 500 migliori film della storia secondo Empire. Il protagonista (Edward Norton) è un giovane uomo il cui...</p>
+                <a href="https://it.wikipedia.org/wiki/Fight_Club_(film)"
+                   title="Fight Club"
+                   target="_blank"
+                   rel="noopener noreferrer">PER SAPERNE DI PIU'</a>
+            </li>
+            <li>
+                <h3>Inception</h3>
+                <img src="inception.jpg" alt="copertina inception">
+                <p>Inception è un film del 2010 scritto e diretto da Christopher Nolan. Il film, un thriller fantascientifico che esplora il concetto onirico, ha un cast composto da Leonardo DiCaprio, Tom Hardy, Ken Watanabe, Joseph Gordon-Levitt, Ellen Page, Marion Cotillard e Cillian Murphy. Acclamato dalla critica e dal pubblico, la pellicola ha ottenuto diversi riconoscimenti, tra cui 4 premi Oscar: miglior fotografia, miglior sonoro, miglior montaggio sonoro e migliori effetti speciali; è stato inoltre candidato al miglior film, migliore sceneggiatura originale, migliore scenografia e migliore colonna sonora. Dominic "Dom" Cobb è un "estrattore", un professionista che si occupa...</p>
+                <a href="https://it.wikipedia.org/wiki/Inception"
+                   title="Inception"
+                   target="_blank"
+                   rel="noopener noreferrer">PER SAPERNE DI PIU'</a>
+            </li>
+            <li>
+                <h3>Blue</h3>
+                <img src="blow.jpg" alt="copertina blow">
+                <p>Blow è un film del 2001 diretto da Ted Demme. La storia è basata su un romanzo di Bruce Porter su George Jung, un trafficante di droga legato al cartello di Medellín, attivo negli anni settanta e ottanta. La storia è raccontata dallo stesso George Jung attraverso un flashback, che comincia negli anni '50, quando il protagonista era solo un bambino. Nato e cresciuto ...</p>
+                <a href="https://it.wikipedia.org/wiki/Blow_(film)"
+                   title="Blow"
+                   target="_blank"
+                   rel="noopener noreferrer">PER SAPERNE DI PIU'</a>
+            </li>
+        </ol>
+
+    </article>
+
+    <!utilizzo un quarto container per studiare e applicare i tag di testo>
+    <div>
+        <h2>Cosa vuol dire scrivere un file html <strong>semantico?</strong></h2>
+        <p>La scrittura del codice HTML è alla base del processo di costruzione di un sito web: <mark>Un buon sito progettato con i fogli di stile nasce da un codice (x)HTML semantico.</mark> La parola <strong>semantica</strong> rientra poco nel nostro vocabolario, e può risultare sconsciuta. <strong>Applicata al web, e in particolare al markup (sia esso HTML o xHTML) indica un uso proprio dei tag, ovvero usare i tag per il loro scopo.</strong></p>
+        <p>Soprattutto all'inizio della scrittura diretta del codice e della progettazione di pagine web con i CSS, credo che tutti abbiamo scritto codice non semantico.<mark>Il tutto sta nell'acquisire la conoscenza e l'esperienza, e poi tutto si riduce a una questione di logica.</mark> La scrittura di codice semantico riguarda anche l'attribuzione di classi e id agli elementi.</p>
+        <p><mark>Una buona regola per capire se davvero abbiamo scritto un buon markup è visualizzare le pagine senza fogli di stile:</mark> i contenuti sono ben organizzati? I titoli, l'enfasi e il resto? A rendere gradevole visivamente la nostra pagina ci penseranno i CSS in un secondo momento. Una buona regola è che se non riusciamo a trovare per un elemento un nome di classe o id che ne descriva la funzione in relazione al contenuto, nella maggior parte dei casi quell'elemento ha scopo puramente presentazionale.</p>
+        <p><strong>Riepiloghiamo i punti necessari per un codice HTML semantico</strong>: <mark>1: L'uso dei tag per il loro scopo. 2: Attribuire classi e id a favore dei fogli di stile. 3: Separare contenitore e contenuto. 4: Limitare al minimo gli elementi con puro scopo presentazionale.</mark></p>
+
+    </div>
+
+    <!infine creo una form di iscrizione con il tag form, label e input>
+    <form>
+        <h2 class="title">Form Iscrizione</h2>
+
+        <!label esterno all'input che specifica di inserire un nome>
+        <label for="name">Nome</label>
+
+        <!input che ci permette di inserire del testo all'interno della form>
+        <!il placeholder e' il testo all'interno della form>
+        <!required indica che non ti fa procedere finche' non hai compilato tutto il campo>
+        <input id="name" type="text" placeholder="Inserisci Nome" required>
+
+        <label for="name">Cognome</label>
+        <input id="name" type="text" placeholder="Inserisci Cognome" required>
+
+        <label for="email">Email</label>
+        <input id="email" type="email" placeholder="Inserisci Email" required>
+
+        <label for="name">Numero telefono</label>
+        <input id="name" type="text" placeholder="Inserisci Numero telefono" required>
+
+        <input class="submit-btn" type="submit" value="Iscriviti">
+    </form>
+</body>
+</html>

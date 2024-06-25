@@ -1,0 +1,34 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    margin: 0 auto;
+    padding: 10px;
+}
+h1{
+    color: red;
+}
+p{
+    color: white;
+}
+.ourparagrafo{
+    border-radius: 10px;
+    /*margin: 5px 5px 5px 5px;*/
+    /*border: 5px 5px 5px 5px;*/
+}
+.divButton{
+    cursor: pointer;
+    background-color: aqua;
+    border: 2px solid blue;
+    border-radius: 4px;
+    /*height: 50px;*/
+    min-width: 100px;
+}
+.newDivButtonClass{
+    cursor: pointer;
+    background-color: white;
+    border: 2px solid red;
+    border-radius: 4px;
+    /*height: 50px;*/
+    min-width: 100px;
+}

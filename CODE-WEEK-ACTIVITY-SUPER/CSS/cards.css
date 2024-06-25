@@ -1,0 +1,188 @@
+/* card container */
+
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+/* stile card */
+
+.card {
+  height: 300px;
+  position: relative;
+  overflow: hidden;
+  opacity: 0;
+  animation: zoom-in 1s ease-in-out forwards;
+  border-radius: 12px;
+  border: 1px solid black;
+  box-shadow: 5px 10px #a8a8a8;
+  margin: 10px;
+  padding: 15px;
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: start;
+  /*aggiungo contorni al testo per accentuare il contrasto*/
+  /*meno mi sposto, e piu' diventa leggibile*/
+  text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black,
+    1px 1px 0 black, -1px 0 0 black, 1px 0 0 black, 0 -1px 0 black,
+    0 1px 0 black;
+}
+
+/* fade in animation dom */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(200px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.card:nth-child(odd) {
+  animation-delay: 0.2s;
+}
+.card:nth-child(even) {
+  animation-delay: 0.4s;
+}
+.card:nth-child(3n) {
+  animation-delay: 0.6s;
+}
+.card:nth-child(4n) {
+  animation-delay: 0.8s;
+}
+@keyframes zoom-in {
+  from {
+    transform: scale(0.1);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* affetto con il mause */
+
+.card:hover {
+  transform: translateY(-2px);
+  box-shadow: 8px 16px #a8a8a8;
+  background-size: 120% 120%;
+}
+
+/* TARGETTTA BOTTONE ,DONE,NOT DONE*/
+
+.completedIndex-Btn {
+  position: absolute;
+  right: -5px;
+  top: -5px;
+  padding: 10px 20px;
+  border: 1px solid black;
+  border-radius: 5px;
+  cursor: pointer;
+  background-size: cover;
+  background-position: center;
+  transition: background-color 0.2s ease-in-out, transform 0.2s ease-in-out;
+  font-size: 1em;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+  text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black,
+    1px 1px 0 black, -1px 0 0 black, 1px 0 0 black, 0 -1px 0 black,
+    0 1px 0 black;
+}
+
+/* stile per l'elemento <h2> ID */
+
+.card .id {
+  font-size: 1em;
+  font-weight: bold;
+  color: lightcoral;
+  margin-bottom: 5px;
+}
+
+.card .userId {
+  font-size: 1em;
+  font-weight: bold;
+  color: lightseagreen;
+  margin-bottom: 5px;
+  display: none;
+}
+
+.card .title {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.card .completedIndex {
+  font-size: 1em;
+  font-weight: bold;
+  margin-bottom: 5px;
+  display: none;
+}
+
+.card .category {
+  font-size: 1em;
+  font-weight: bold;
+  /*color: white;*/
+  color: rgb(5, 250, 5);
+  display: none;
+}
+
+/* cambio colore in base alla categoria */
+
+.sportCards {
+  background-image: url("../images/sport.jpg");
+  background-position: center;
+  background-size: 110% 110%;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+.foodCards {
+  background-image: url("../images/food.jpg");
+  background-position: center;
+  background-size: 110% 110%;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+.familyCards {
+  background-image: url("../images/family.jpg");
+  background-position: center;
+  background-size: 110% 110%;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+.otherCards {
+  background-image: url("../images/other.jpg");
+  background-position: center;
+  background-size: 110% 110%;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+/*classi per colorare l'indice completedIndex*/
+.true {
+  text-decoration: underline;
+  color: rgb(251, 255, 0);
+}
+.false {
+  text-decoration: line-through;
+  color: grey;
+}
+
+/*stili indicacori bottoni card*/
+.done {
+  background-color: greenyellow;
+  /*text-decoration: underline;*/
+  /*color: rgb(251, 255, 0);*/
+}
+.not {
+  background-color: red;
+  /*text-decoration:line-through;*/
+  /*color: grey;*/
+}

@@ -1,0 +1,118 @@
+body {
+    background-color:rgba(17, 255, 0, 0.528);
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    margin:0 auto;
+    display: flex;
+    flex-direction: column;
+}
+/*Applico modifiche in base alla grandzza del dysplay. In questo caso i dispositivi con desktop visualizzeranno uno sfondo viola.*/
+@media screen and (max-width: 1280px) {
+    body {
+        background-color:rgb(204, 255, 0);
+    }
+}
+/*Applico modifiche in base alla grandzza del dysplay. In questo caso i dispositivi mobile visualizzeranno uno sfondo blu*/
+@media screen and (max-width:480px) {
+    body {
+        background-color:rgb(76, 0, 255);
+    }
+}
+
+/*applico colore,font size e peso per ogni heading*/
+h1 {
+    /*border: 2px solid black;*/
+    color: rgb(249, 6, 6);
+    font-size: 2em;
+    font-weight: 300;
+}
+h2 {
+    /*border: 2px solid black;*/
+    color: rgb(6, 6, 249);
+    font-size: 2em;
+    font-weight: 600;
+}
+h3 {
+    /*border:2px solid black;*/
+    color: rgb(6, 249, 18);
+    font-size: 2em;
+    font-weight: 900;
+}
+#main-header {
+    /*background-color:rgb(255, 179, 0);*/
+    /*border:5px solid red;*/
+    border-radius: 5px;
+    margin: 0 auto;
+    padding:10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+/*personalizzo e decoro i link all'interno della pagina html*/
+a {
+    text-decoration: underline;
+    color: rgb(55, 0, 255);
+}
+/*applico una animazione/transformazione relativa alla posizione del mio mouse su tutti gli elementi ancora*/
+a:hover {
+    color: rgb(242, 252, 238);
+
+}
+/*ul {
+    border:5px solid red;
+}*/
+#box1 {
+    background-color: rgb(9, 249, 13);
+    border:2px solid black;
+    height: 200px;
+    width: 200px;
+    margin:10px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding:20px 20px;
+    box-shadow: 10px 10px 10px black;
+}
+#box2 {
+    background-color: rgb(9, 249, 13);
+    border:2px solid black;
+    height: 200px;
+    width: 50%;
+    margin:10px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding:20px 20px;
+    box-shadow: 10px 10px 10px black;
+}
+#box1:hover {
+    background-color:rgb(225, 255, 0);
+    box-shadow:15px 15px 15px black ;
+    cursor: pointer;
+}
+#box2:hover {
+    background-color:rgb(255, 30, 0);
+    box-shadow:15px 15px 15px black ;
+    cursor: pointer;
+}
+#boxuniti {
+    background-color: rgb(249, 9, 9);
+    border:2px solid black;
+    height: 200px;
+    width: 75%;
+    margin:10px 10px;
+    box-shadow: 10px 10px 10px black;
+}
+#boxuniti2 {
+    background-color: rgb(249, 9, 149);
+    /*border:2px solid black;*/
+    height: 200px;
+    width: 50%;
+}
+#boxuniti3 {
+    background-color: rgb(9, 213, 249);
+    /*border:2px solid black;*/
+    height: 200px;
+    width: 25%;
+}

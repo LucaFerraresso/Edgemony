@@ -1,0 +1,19 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: "Josefin Sans", sans-serif;
+}
+
+.container-page {
+	width: 100%;
+	margin: 0 auto;
+	max-width: 1440px;
+}
+
+.no-scroll {
+	overflow: hidden;
+}

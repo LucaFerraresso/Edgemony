@@ -1,0 +1,36 @@
+*{
+    text-align: center;
+}
+h1{
+    color: RED;
+}
+/*container del form*/
+.form{
+    background-color: aqua;
+    border-radius: 15px;
+    width: 100%;
+    height: auto;
+    padding:auto;
+    padding: 10px 0 10px 0;
+    
+}
+/*il form*/
+.create-an-Obj{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+/*bott0ni del form*/
+.create-an-Obj button{
+    border: none;
+    width: 100px;
+    height: 40px;
+    border-radius: 15px;
+}
+/*container che racchiude i due bottoni*/
+.buttons{
+    justify-content: space-around;
+
+}

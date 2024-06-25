@@ -1,0 +1,152 @@
+header {
+	position: relative;
+	padding-bottom: 100px;
+}
+
+.up {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+	transition: transform 0.35s linear;
+	z-index: 9;
+}
+
+.up:hover {
+	transform: scale(1.2) rotate(360deg);
+}
+
+.img-header {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.img-header::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.1);
+}
+
+.img-header img {
+	object-fit: cover;
+	width: 100%;
+	height: 100%;
+}
+
+header h1 {
+	position: relative;
+	text-align: center;
+	padding-top: 70px;
+	margin-bottom: 170px;
+	font-size: 2.5rem;
+	letter-spacing: 0.5em;
+	animation: fadeIn 2s ease-in-out forwards;
+}
+
+header h1 span {
+	color: #2D46B9;
+}
+
+header p {
+	position: relative;
+	padding: 0 20px;
+	animation: fadeIn 3s ease-in-out forwards;
+	font-size: 20px;
+}
+
+header button {
+	border: none;
+	background-color: #e5e5e5;
+	margin-top: 64px;
+	cursor: pointer;
+	transition: transform 0.35s linear;
+	margin-right: 20px;
+}
+
+header button:hover {
+	transform: scale(1.2);
+}
+
+#modal {
+	position: absolute;
+	top: 50px;
+	left: 150px;
+	max-width: 400px;
+	background-color: rgb(255, 255, 255);
+	border: 2px solid rgb(22, 22, 145);
+	border-radius: 16px;
+	padding: 5px 5px 40px 5px;
+	margin-top: 10px;
+
+}
+
+
+#modal p {
+	padding-top: 30px;
+}
+
+
+
+#close-modal {
+	background-color: rgb(255, 255, 255);
+	float: right;
+	border: none;
+	margin: 0;
+	transition: transform 0.35s linear;
+	cursor: pointer;
+
+}
+
+#close-modal:hover {
+
+	transform: scale(1.15);
+
+}
+
+.hidden {
+	display: none;
+}
+
+
+@media only screen and (min-width: 1024px) {
+	header {
+		display: flex;
+		align-items: center;
+		padding-top: 150px;
+		padding-bottom: 150px;
+		flex-direction: row-reverse;
+	}
+
+	header h1 {
+		padding: 0;
+		margin: 0;
+		width: 70%;
+	}
+
+	header p {
+		padding: 0;
+		padding-left: 50px;
+		width: 30%;
+		margin-top: 100px;
+		margin-bottom: -120px;
+	}
+
+	#modal p {
+		text-align: center;
+		padding: 0;
+		margin: 30px 20px 10px 20px;
+		width: auto;
+
+	}
+
+	#modal {
+		top: 80px;
+	}
+
+}

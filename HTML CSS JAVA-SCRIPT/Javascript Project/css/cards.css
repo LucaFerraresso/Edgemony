@@ -1,0 +1,175 @@
+.container-card {
+	position: relative;
+	padding-top: 50px;
+	display: flex;
+	gap: 10px;
+	flex-wrap: wrap;
+	padding-bottom: 50px;
+	min-height: 100vh;
+}
+
+
+.img-background-card {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.img-background-card img {
+	object-fit: cover;
+	width: 100%;
+	height: 100%;
+}
+
+
+
+.border-card1 {
+	background-color: gray;
+	position: relative;
+	padding: 3px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 565px;
+}
+
+.border-card2 {
+	background-color: rgb(112, 112, 112);
+	margin: 0 auto;
+	position: relative;
+	padding: 8px;
+	border-radius: 10px;
+}
+
+.card {
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	position: relative;
+	border-radius: 20px;
+	max-width: 280px;
+	margin: 0 auto;
+	background-color: #E5E5E5;
+	min-height: 536.05px;
+}
+
+.card__name,
+.card__paragraph,
+.container-price,
+.card__img {
+	position: relative;
+}
+
+.card__name,
+.card__paragraph,
+.container-price {
+	margin-bottom: 20px;
+}
+
+.card__name span {
+	color: #2D46B9;
+}
+
+.container-price {
+	display: flex;
+	gap: 5px;
+	color: #2D46B9;
+}
+
+.price__littleCard {
+	padding: 5px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	border: 2px solid black;
+	border-radius: 5px;
+	transition: transform 0.35 linear;
+	cursor: pointer;
+	min-width: 81px;
+}
+
+.price__littleCard:hover {
+	transform: scale(1.1);
+}
+
+.price__name {
+	color: #2D46B9;
+}
+
+.price__name,
+.price__img {
+	margin-bottom: 5px;
+}
+
+.price__price {
+	border: 2px solid black;
+	padding: 5px;
+	border-radius: 5px;
+}
+
+.card__img {
+	transition: transform 0.35s linear;
+}
+
+.card__img:hover {
+	transform: scale(1.2);
+}
+
+.margin-top-img {
+	margin-top: 40px;
+}
+
+.margin-top2-img {
+	margin-top: -50px;
+}
+
+.fadeIn1 {
+	animation: fadeIn 0.2s ease-in-out forwards;
+}
+
+.fadeIn2 {
+	animation: fadeIn 0.4s ease-in-out forwards;
+}
+
+.fadeIn3 {
+	animation: fadeIn 0.6s ease-in-out forwards;
+}
+
+.fadeIn4 {
+	animation: fadeIn 0.8s ease-in-out forwards;
+}
+
+.fadeIn5 {
+	animation: fadeIn 1s ease-in-out forwards;
+}
+
+.fadeIn6 {
+	animation: fadeIn 1.2s ease-in-out forwards;
+}
+
+.fadeIn7 {
+	animation: fadeIn 1.4s ease-in-out forwards;
+}
+
+.fadeIn8 {
+	animation: fadeIn 1.6s ease-in-out forwards;
+}
+
+.fadeIn9 {
+	animation: fadeIn 1.8s ease-in-out forwards;
+}
+
+.fadeIn10 {
+	animation: fadeIn 2s ease-in-out forwards;
+}
+
+
+@media only screen and (min-width: 1024px) {
+	.container-card {
+		display: flex;
+	}
+}

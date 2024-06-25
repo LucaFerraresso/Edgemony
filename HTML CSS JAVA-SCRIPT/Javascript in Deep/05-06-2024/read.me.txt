@@ -1,0 +1,5 @@
+inizio lo stile in css partendo sempre dal mobile. 
+
+Non spaventatevi se vedete il layout spaccato
+
+mettete iphone SE ... :)

@@ -1,0 +1,133 @@
+.modal{
+    box-shadow: 5px 10px #a8a8a8;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    position: relative;
+    width: 95%;
+    height:50%;
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+    flex-direction: column;
+    background: rgba(3, 3, 3, 0.672);
+    border: 1px solid black;
+    border-radius: 15px;
+    z-index: 1;
+    padding: 10px;
+    gap: 10px;
+    text-shadow: -1px -1px 0 black,
+                  1px -1px 0 black,
+                  -1px 1px 0 black,
+                   1px 1px 0 black, 
+                    -1px 0 0 black,
+                     1px 0 0 black,
+                    0 -1px 0 black,
+                     0 1px 0 black;
+                
+    
+}
+
+.modal-content{
+    margin: 0;
+    background-color: red;
+    border: 1px solid black;
+    height: 35vh;
+    width: 35vh;
+    overflow: hidden;
+    opacity: 0;
+    animation: fadeInUp 0.8s ease-in-out forwards;
+    background-size: 110% 110%;
+    overflow: hidden;
+    border-radius: 12px;
+    margin: 15px 15px;
+    padding: 15px;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+@keyframes fadeInUp{
+    from{
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* stile bottone close */
+
+.close-button{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    padding: 10px 20px;
+    border: 1px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+    background: linear-gradient(45deg, #ffca28, #ffb300);
+    transition: background-color 0.2s ease-in-out, transform 0.2s ease-in-out;
+    font-size: 1em;
+    font-weight: bold;
+    color: white;
+    margin: 0 5px;
+}
+
+/* modale di destra, con i text content */
+
+.modal-content-text{
+    border: 1px solid black;
+    height: 90%;
+    width: 45%;
+    overflow: auto;
+    opacity: 0;
+    animation: fadeInUp 0.8s ease-in-out forwards;
+    background: rgba(3, 3, 3, 0.336);
+    border-radius: 10px;
+    margin: 30px;
+    padding: 15px;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    display: flex;
+    flex-direction: column;
+}
+
+/* stile per l'elemento <h2> ID */
+
+.modal-content-text .id{
+    font-size: 1.2em;
+    font-weight: bold;
+    color: lightcoral;
+}
+
+/* stile per l'elemento <h2> USER ID */
+
+.modal-content-text .userId{
+    font-size: 1.2em;
+    font-weight: bold;
+    color: lightseagreen;
+}
+
+/* stile per l'elemento <p> TITLE */
+
+.modal-content-text .title{
+    font-size: 1.2em;
+    font-weight: bold;
+    color: white;
+}
+
+/* stile per l'elemento <h2> COMPLETED-INDEX */
+
+.modal-content-text .completedIndex{
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+/* stile per l'elemento <h2> CATEGORY ID */
+
+.modal-content-text .category{
+    font-size: 1.2em;
+    font-weight: bold;
+    color: rgb(5, 250, 5);
+}

@@ -1,0 +1,22 @@
+*{
+    font-family:'Courier New', Courier, monospace;
+}
+
+.body{
+
+    background-color: #f1f1f2;
+    justify-content: center;
+}
+
+/* il mio titolo della pagina */
+
+h1{
+    text-align: center;
+}
+
+/* messaggi d'errore */
+
+p{
+    color: red;
+}
+

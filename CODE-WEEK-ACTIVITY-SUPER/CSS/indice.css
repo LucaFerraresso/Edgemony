@@ -1,0 +1,25 @@
+/* titolo- nomi sezioni- container card- */
+
+.indiceDiv{
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    /*text-decoration: underline;*/
+}
+.indice{
+    color: white;
+    text-rendering: optimizeLegibility;
+    font-size: 2em;
+    font-weight: 900;
+    font-style: italic; 
+    text-shadow: -1px -1px 0 black,
+                  1px -1px 0 black,
+                  -1px 1px 0 black,
+                   1px 1px 0 black, 
+                    -1px 0 0 black,
+                     1px 0 0 black,
+                    0 -1px 0 black,
+                     0 1px 0 black;
+
+}

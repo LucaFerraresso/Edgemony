@@ -1,0 +1,72 @@
+/* stile per la barra delle categorie, sono i 4 pulsanti */
+
+.categorylist{
+    margin-top: -1px;
+    background-color: #f1f1f2;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: space-around;
+    flex-direction: row;
+    flex: 1;
+    gap: 10px;
+}
+
+/* stile per gli elementi <button> nella categorylist */
+
+.categorylist button{
+    width: 110px;
+    height: 110px;
+    text-align: center;
+
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out, transform 0.2s ease-in-out;
+    font-size: 1em;
+    font-weight: bold;
+    color: white;
+  
+}
+
+/* stile per i pulsanti i base alla categoria */
+
+.categorylist .sport{
+    background: linear-gradient(135deg, #00b894 0%, #009b74 100%);
+}
+
+.categorylist .food{
+    background: linear-gradient(135deg, #e17055 0%, #b94e3d 100%);
+}
+
+.categorylist .family{
+    background: linear-gradient(135deg, #0984e3 0%, #065cab 100%);
+}
+
+.categorylist .other{
+    background: linear-gradient(135deg, #636e72 0%, #484b4e 100%);
+}
+
+.categorylist button:hover{
+    transform: translateY(-2px);
+    filter: brightness(90%);
+}
+
+.activated{
+    text-decoration: underline;
+    text-align: start;
+    
+    animation: rotation 1s  linear;
+    
+}
+
+@keyframes rotation {
+    50% {
+        transform: rotate(360deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}

@@ -1,0 +1,30 @@
+.filter-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: #2d46b9;
+    color: #f6b6bf;
+}
+
+.filter-container p {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+input {
+    margin-left: 50px;
+}
+
+label {
+    color: white;
+
+
+}
+
+@media only screen and (min-width: 1024px) {
+	label {
+        color: white;
+        margin-left: 10px;
+    }
+}

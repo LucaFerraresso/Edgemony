@@ -1,0 +1,21 @@
+@import url("css/reset.css");
+@import url("css/variables.css");
+
+@import url("css/typography.css");
+@import url("css/layout.css");
+
+/* components */
+@import url("css/buttons.css");
+
+/* sections */
+@import url("css/hero.css");
+/* end sections */
+
+/*sezione 2*/
+@import url("css/getstarted.css");
+@import url(assets/2.jpg);
+/*sezione 3*/
+@import url("css/features.css");
+@import url("services.css");
+/*sezione 4 video*/
+@import url("css/video-section");

@@ -1,0 +1,51 @@
+/* stile header */
+
+.header{
+    margin-top: -1px;
+    background-color: #f1f1f2;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    text-align: center;
+    flex: 1;
+    border: 1px solid black;
+    min-width: 50%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.header input[type="text"]{
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 180px;
+    transition: box-shadow 0.2s ease-in-out;
+}
+
+.header button{
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background: linear-gradient(45deg, #ffca28 0%, #ffb300 100%);
+    transition: background-color 0.2s ease-in-out, transform 0.2s ease-in-out;
+    font-size: 1em;
+    font-weight: bold;
+    color: white;
+}
+
+.header button:hover{
+    transform: translateY(-2px);
+    filter: brightness(90%);
+}
+
+/* effetto del mouse sul campo input */
+
+.header input[type="text"]:focus{
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    outline: none;
+}
+
