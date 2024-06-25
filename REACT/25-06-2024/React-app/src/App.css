@@ -1,42 +1,167 @@
-#root {
-  max-width: 1280px;
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+/*
+    2. Remove default margin
+  */
+* {
+  margin: 0;
+  padding: 0;
+}
+/*
+    Typographic tweaks!
+    3. Add accessible line-height
+    4. Improve text rendering
+  */
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+/*
+    5. Improve media defaults
+  */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+/*
+    6. Remove built-in form typography styles
+  */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+/*
+    7. Avoid text overflows
+  */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+/*
+    8. Create a root stacking context
+  */
+#root,
+#__next {
+  isolation: isolate;
+}
+
+/* APP */
+
+#app {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100dvh;
+}
+
+.container {
+  width: min(88%, 75rem);
   margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+}
+
+.wrapper {
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 3rem;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+  display: block;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+ul.list {
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 0.5rem;
+  align-items: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+li.item {
+  display: block;
 }
 
-.card {
-  padding: 2em;
+li.item a {
+  display: inline-block;
+  padding: 0.7rem 0;
+  color: inherit;
 }
 
-.read-the-docs {
-  color: #888;
+.footer {
+  flex: 1;
+}
+
+.footer .menu {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3rem;
+}
+
+ul.menu ul li a {
+  padding: 0;
+  text-decoration: none;
+}
+
+ul.menu > li > a {
+  font-weight: bold;
+  text-decoration: none;
+  margin-bottom: -1rem;
+}
+
+main {
+  display: flex;
+  height: 65dvh;
+}
+
+.sidebar {
+  width: 25%;
+  background-color: aqua;
+  padding: 20px;
+}
+
+.sidebar h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.sedebar ul li {
+  margin-bottom: 5px;
+}
+
+.sedebar ul li a {
+  color: red;
+  text-decoration: none;
+}
+
+.post-list {
+  flex: 1;
+  padding: 20px;
+  background-color: blueviolet;
+}
+
+.post-list:not(:last-child) {
+  border-bottom: 1px solid black;
+  padding-bottom: 20px;
 }
