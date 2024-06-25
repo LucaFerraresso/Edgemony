@@ -4,7 +4,7 @@ function Header() {
       <div className="container">
         <div className="wrapper">
           <div className="logo">LOGO</div>
-          <menu></menu>
+          <menuhtml />
         </div>
       </div>
     </Header>
@@ -17,7 +17,7 @@ function menu() {
       <ul className="list">
         <MenuItem label={"About us"} />
         <MenuItem label={"Blog"} />
-        {MenuItem({ label: "Contracts" })}
+        <menuItemHtml label={"Contact"} />
       </ul>
     </nav>
   );
@@ -27,7 +27,7 @@ function MenuItem(props) {
   const { label, href = "#" } = props;
   return (
     <li className="item">
-      <a href="#">{label}</a>
+      <a href={href}>{label}</a>
     </li>
   );
 }

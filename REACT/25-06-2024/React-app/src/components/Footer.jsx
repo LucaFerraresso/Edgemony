@@ -1,5 +1,3 @@
-import React, { Children } from "react";
-
 function Footer() {
   return (
     <Footer className="Footer">
