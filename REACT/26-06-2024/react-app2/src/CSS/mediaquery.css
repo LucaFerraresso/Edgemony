@@ -1,0 +1,19 @@
+@media (max-width: 768px) {
+  header,
+  footer {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  header nav,
+  footer nav {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .article-container {
+    gap: 15px;
+  }
+  article {
+    padding: 15px;
+  }
+}

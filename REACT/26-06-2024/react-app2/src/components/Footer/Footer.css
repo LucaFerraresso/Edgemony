@@ -1,0 +1,34 @@
+footer {
+  background-color: aqua;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #fff;
+  border-top: 2px solid grey;
+}
+
+footer .LOGO {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #007bff;
+}
+
+footer .nav {
+  display: flex;
+  gap: 15px;
+}
+
+footer nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+footer nav a:hover {
+  color: #007bff;
+}

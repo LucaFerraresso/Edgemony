@@ -1,0 +1,38 @@
+main {
+  padding: 20px;
+}
+
+.article-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.article {
+  background-color: #fff;
+  padding: 20px;
+  gap: 20px;
+}
+
+article h1 {
+  font-size: 22px;
+  margin: 0 0 10px;
+  color: #007bff;
+}
+
+article p {
+  margin: 0 0 15px;
+  line-height: 1.6;
+}
+
+article h2 {
+  font-size: 18px;
+  margin: 0;
+  color: #555;
+}
+
+.card {
+  border: 1px solid #eee;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
