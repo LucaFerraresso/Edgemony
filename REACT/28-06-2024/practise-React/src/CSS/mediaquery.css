@@ -1,0 +1,29 @@
+/*da qui gestisco solo le media query*/
+/*ogni componente/sezione avra' il suo file css specifico*/
+
+@media (max-width: 667px) {
+  #root {
+    display: grid;
+    grid-template-rows: 1fr 2fr 1fr;
+  }
+  .main {
+    display: flex;
+    flex-direction: column;
+  }
+  .Log-in {
+    width: 300px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .main {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+/*container principale*/
+#root {
+  display: grid;
+  grid-template-rows: 1fr 2fr 1fr;
+  height: 100dvh;
+}

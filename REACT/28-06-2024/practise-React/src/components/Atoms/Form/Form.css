@@ -1,0 +1,18 @@
+.Log-in {
+  margin: auto;
+  padding: 16px;
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  background-color: #f9f9f9;
+}
+
+.Log-in input {
+  width: 100%;
+  padding: 15px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  box-sizing: border-box;
+  font-size: 16px;
+}
